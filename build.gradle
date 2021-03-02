@@ -22,6 +22,9 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
 
+    //导入配置文件处理器，配置文件进行绑定就会有提示
+    annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
+
     // test
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
